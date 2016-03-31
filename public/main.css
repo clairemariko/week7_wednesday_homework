@@ -1,0 +1,16 @@
+body{
+  background-image: url("../images/road.jpeg");
+  background-size: cover;
+  
+  background-position: center center fixed;
+}
+
+
+
+
+#map {
+  border-style: 5px solid black;
+  height: 400px;
+  width: 400px;
+}
+
