@@ -37,7 +37,7 @@ var populateSelect = function (countries) {
     var parent = document.querySelector('#countries');
     countries.forEach(function (country, index) {
         // country.index = index;
-        var option = document.createElement("option");
+        var option = document.createElement;("option");
         option.value = index.toString();
         option.innerText = country.name;
         parent.appendChild(option);
@@ -48,6 +48,11 @@ var populateSelect = function (countries) {
         var country = countries[index];
         updateDisplay(country);
         localStorage.setItem("selectedCountry", index);
+        //adding a graph
+        var countries = _.map(countriesData, function(
+            countryData){
+            return new Country(countryData);
+        })
     });
  }
 
